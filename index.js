@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
 
-// Questions for the user are put into an array
+//Questions for the user are put into an array
 const questions = [
     {
         type: "input",
@@ -54,12 +54,15 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
-    const READMEContent = (answers)
+    const readmeContent = (answers)
 
+    createREADMEFile(readmeContent)
 });
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function to create and populate README file
+function writeToFile(fileName, data) {
+    fs.writeFile(`"${fileName}README.md", content, (err) => err ? console.log(err): console.log("README file created!")`)
+}
 
 // TODO: Create a function to initialize app
 function init() {}
