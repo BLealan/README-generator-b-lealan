@@ -10,10 +10,9 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-const renderLicense = (license) => {
-  const licenseChoice = (license)
+let renderLicense = (license) => {
   let licenseBadge = "";
-  switch(licenseChoice){
+  switch(license.license){
     case "Apache 2.0":
       licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
       break;
@@ -37,18 +36,19 @@ const renderLicense = (license) => {
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = ({title, description, installation, usage, license, contribution, test, github, email}) =>
-  `# ${title}
+  `# ${title} 
+  ${renderLicense({license})}
 
   ## Description
   ${description}
 
   ## Table of Contents
-    - [Installation](#installation)  
-    - [Usage](#usage)  
-    - [License](#license)  
-    - [Contributing](#contributing)  
-    - [Tests](#tests)  
-    - [Questions](#questions)  
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
   ## Installation
   ${installation}
@@ -57,7 +57,8 @@ const generateMarkdown = ({title, description, installation, usage, license, con
   ${usage}
 
   ## License
-  ${renderLicense({license})}  
+  You have selected ${license}.
+  ${renderLicense({license})}
   Please click badge for details
 
   ## Contributing
@@ -68,7 +69,7 @@ const generateMarkdown = ({title, description, installation, usage, license, con
 
   ## Questions
 
-  You can find me at: [${github}](www.github.com/${github})  
+  You can find me at: [${github}](www.github.com/${github})
   And email questions to me at: ${email}
 `;
 
