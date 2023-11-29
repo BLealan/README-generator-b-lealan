@@ -10,6 +10,31 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+const renderLicense = (license) => {
+  const licenseChoice = (license)
+  let licenseBadge = "";
+  switch(licenseChoice){
+    case "Apache 2.0":
+      licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case "BSD 3-Clause":
+      licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case "GNU GPL v3":
+      licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+    case "IBM Public License":
+      licenseBadge = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
+      break;
+    case "MIT":
+      licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      break;
+    default:
+      licenseBadge = "";
+  }
+  return licenseBadge;
+}
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = ({title, description, installation, usage, license, contribution, test, github, email}) =>
   `# ${title}
@@ -18,12 +43,12 @@ const generateMarkdown = ({title, description, installation, usage, license, con
   ${description}
 
   ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+    - [Installation](#installation)  
+    - [Usage](#usage)  
+    - [License](#license)  
+    - [Contributing](#contributing)  
+    - [Tests](#tests)  
+    - [Questions](#questions)  
 
   ## Installation
   ${installation}
@@ -32,7 +57,8 @@ const generateMarkdown = ({title, description, installation, usage, license, con
   ${usage}
 
   ## License
-  ${license}
+  ${renderLicense({license})}  
+  Please click badge for details
 
   ## Contributing
   ${contribution}
@@ -42,8 +68,8 @@ const generateMarkdown = ({title, description, installation, usage, license, con
 
   ## Questions
 
-  You can find me at: [${github}](www.github.com/${github})
+  You can find me at: [${github}](www.github.com/${github})  
   And email questions to me at: ${email}
 `;
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown, renderLicense;
