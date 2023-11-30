@@ -36,49 +36,48 @@ let renderLicense = (license) => {
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = ({title, description, installation, usage, license, contribution, test, github, email}) =>
-  `# ${title} 
+`# ${title} 
 
-  ${renderLicense({license})}
+${renderLicense({license})}
 
-  ## Description
+## Description
 
-  ${description}
+${description}
 
-  ## Table of Contents
+## Table of Contents
 
-    - [Installation](#installation)  
-    - [Usage](#usage)  
-    - [License](#license)  
-    - [Contributing](#contributing)  
-    - [Tests](#tests)  
-    - [Questions](#questions)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [License](#license)  
+- [Contributing](#contributing)  
+- [Tests](#tests)  
+- [Questions](#questions)  
 
-  ## Installation
+## Installation
 
-  ${installation}
+${installation}
 
-  ## Usage
+## Usage
 
-  ${usage}
+${usage}
 
-  ## License
+## License
 
-  ${renderLicense({license})}  
-  You have selected ${license} and as such the application is covered by it's terms.  
-  Please click badge for details.
+${renderLicense({license})}  
+You have selected ${license} and as such the application is covered by it's terms.  
+Please click badge for details.
 
-  ## Contributing
+## Contributing
 
-  ${contribution}
+${contribution}
 
-  ## Tests
+## Tests
 
-  ${test}
+${test}
 
-  ## Questions
+## Questions
 
-  If you want to know more, you can find me at: [${github}](www.github.com/${github})  
-  And email questions to: ${email}.
-`;
+If you want to know more, you can find me at: [${github}](www.github.com/${github})  
+And email questions to: ${email}.`;
 
 module.exports = generateMarkdown, renderLicense;

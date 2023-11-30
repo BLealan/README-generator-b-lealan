@@ -60,7 +60,7 @@ inquirer.prompt(questions).then(data => {
 });
 
 // Function to create and populate README file
-const writeToFile = (content) => fs.writeFile(".new-README.md", content, (err) => err ? console.log(err): console.log("README file created!"))
+const writeToFile = (content) => fs.writeFile("new-README.md", content, (err) => err ? console.log(err): console.log("README file created!"))
 
 // TODO: Create a function to initialize app
 function init() {}
