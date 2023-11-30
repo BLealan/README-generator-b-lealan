@@ -34,10 +34,10 @@ let renderLicense = (license) => {
 }
 
 //Function to create markdown file and populate with user inputs, retrieved via object destructuring
-const generateMarkdown = ({title, description, installation, usage, license, contribution, test, github, email}) =>
+const generateMarkdown = ({ title, license, description, installation, usage, contribution, test, github, email }) =>
 `# ${title} 
 
-${renderLicense({license})}
+${renderLicense({ license })}
 
 ## Description
 
