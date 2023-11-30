@@ -1,10 +1,10 @@
-# Function call to initialize app 
+# Test 
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://www.ibm.com/docs/en/linux-on-z?topic=examples-common-public-license-v10)
 
 ## Description
 
-Function call to initialize app
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Etiam erat velit scelerisque in.
 
 ## Table of Contents
 
@@ -17,27 +17,27 @@ Function call to initialize app
 
 ## Installation
 
-Function call to initialize app
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Etiam erat velit scelerisque in.
 
 ## Usage
 
-Function call to initialize app
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Etiam erat velit scelerisque in.
 
 ## License
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)  
-You have selected Apache 2.0 and as such the application is covered by it's terms.  
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://www.ibm.com/docs/en/linux-on-z?topic=examples-common-public-license-v10)  
+You have selected IBM Public License and as such the application is covered by it's terms.  
 Please click badge for details.
 
 ## Contributing
 
-Function call to initialize app
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Etiam erat velit scelerisque in.
 
 ## Tests
 
-Function call to initialize app
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Etiam erat velit scelerisque in.
 
 ## Questions
 
-If you want to know more, you can find me at: [Function call to initialize app](www.github.com/Function call to initialize app)  
-And email questions to: Function call to initialize app.
+If you want to know more, you can find me at: [BLealan](https://www.github.com/BLealan)  
+And email questions to: ben_lealan@hotmail.com.
