@@ -1,10 +1,11 @@
 //Ensure packages needed are downloaded and declared
 const inquirer = require("inquirer");
 const fs = require("fs");
+//Ensure functions are brought in from generateMarkdown.js
 const generateMarkdown = require("./generateMarkdown.js");
 let renderLicense = require("./generateMarkdown.js");
 
-//Questions for the user are put into an array
+//Questions for the user are put into an array with simple descriptive names for data retrieval
 const questions = [
     {
         type: "input",
@@ -55,16 +56,15 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions).then(data => {
-    const markDown = generateMarkdown(data)
-    writeToFile(markDown);
-});
-
 // Function to create and populate README file
 const writeToFile = (content) => fs.writeFile("new-README.md", content, (err) => err ? console.log(err): console.log("README file created!"))
 
-// TODO: Create a function to initialize app
-function init() {}
+// Function declared to initialize app
+function init() {
+    inquirer.prompt(questions).then(data => {
+    const markDown = generateMarkdown(data)
+    writeToFile(markDown);
+});}
 
 // Function call to initialize app
 init();
